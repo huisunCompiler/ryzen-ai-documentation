@@ -5,17 +5,16 @@ Installation Instructions
 #########################
 
 
-
 *************
 Prerequisites
 *************
 
-The Ryzen AI Software supports AMD processors with a Neural Processing Unit (NPU). Consult the release notes for the full list of :ref:`supported configurations <supported-configurations>`. 
+The Ryzen AI Software supports AMD processors with a Neural Processing Unit (NPU). Refer to the release notes for the full list of :ref:`supported configurations <supported-configurations>`.
 
-The following dependencies must be present on the system before installing the Ryzen AI Software:
+The following dependencies must be installed on the system before installing the Ryzen AI Software:
 
-.. list-table:: 
-   :widths: 25 25 
+.. list-table::
+   :widths: 25 25
    :header-rows: 1
 
    * - Dependencies
@@ -31,13 +30,21 @@ The following dependencies must be present on the system before installing the R
 
 |
 
-|warning| **IMPORTANT**: 
+|warning| **IMPORTANT**:
 
-- Visual Studio 2022 Community: ensure that "Desktop Development with C++" is installed
+- Visual Studio 2022 Community: ensure that `Desktop Development with C++` is installed
 
-- Anaconda or Miniconda: ensure that the following path is set in the System PATH variable: ``path\to\anaconda3\Scripts`` or ``path\to\miniconda3\Scripts`` (The System PATH variable should be set in the *System Variables* section of the *Environment Variables* window). 
+- Anaconda or Miniconda: ensure that the following path is set in the System PATH variable: ``path\to\anaconda3\Scripts`` or ``path\to\miniconda3\Scripts`` (The System PATH variable should be set in the *System Variables* section of the *Environment Variables* window).
 
 |
+
+********************
+1.4.1 Release Update
+********************
+
+Ryzen AI 1.4.1 patch has been released on the Ryzen AI Software Early Access Secure Site: https://account.amd.com/en/member/ryzenai-sw-ea.html.
+
+If you like to install publicly available Ryzen AI 1.4 please follow documentation here: https://ryzenai.docs.amd.com/en/1.4/index.html
 
 .. _install-driver:
 
@@ -45,14 +52,14 @@ The following dependencies must be present on the system before installing the R
 Install NPU Drivers
 *******************
 
-- Download the NPU driver installation package :download:`NPU Driver <https://account.amd.com/en/forms/downloads/amd-end-user-license-xef.html?filename=NPU_RAI1.4_GA_257_WHQL.zip>`
+- Download the NPU driver installation package NPU_RAI1.4.1_259_WHQL.zip from Ryzen AI Software Early Access Secure Site: https://account.amd.com/en/member/ryzenai-sw-ea.html
 
 - Install the NPU drivers by following these steps:
 
-  - Extract the downloaded ``NPU_RAI1.4_GA_257_WHQL.zip`` zip file.
-  - Open a terminal in administrator mode and execute the ``.\npu_sw_installer.exe`` exe file.
+  - Extract the downloaded ZIP file.
+  - Open a terminal in administrator mode and execute the ``.\npu_sw_installer.exe`` file.
 
-- Ensure that NPU MCDM driver (Version:32.0.203.257, Date:3/12/2025) is correctly installed by opening ``Device Manager`` -> ``Neural processors`` -> ``NPU Compute Accelerator Device``.
+- Ensure that NPU MCDM driver (Version:32.0.203.259, Date:4/9/2025) is correctly installed by opening ``Device Manager`` -> ``Neural processors`` -> ``NPU Compute Accelerator Device``.
 
 
 .. _install-bundled:
@@ -61,16 +68,16 @@ Install NPU Drivers
 Install Ryzen AI Software
 *************************
 
-- Download the RyzenAI Software installer :download:`ryzen-ai-1.4.0.exe <https://account.amd.com/en/forms/downloads/amd-end-user-license-xef.html?filename=ryzen-ai-1.4.0.exe>`.
+- Download the RyzenAI Software installer ``ryzen-ai-1.4.1.exe`` from Ryzen AI Software Early Access Secure Site: https://account.amd.com/en/member/ryzenai-sw-ea.html.
 
 - Launch the MSI installer and follow the instructions on the installation wizard:
 
   - Accept the terms of the Licence agreement
-  - Provide the destination folder for Ryzen AI installation (default: ``C:\Program Files\RyzenAI\1.4.0``)
-  - Specify the name for the conda environment (default: ``ryzen-ai-1.4.0``)
+  - Provide the destination folder for Ryzen AI installation (default: ``C:\Program Files\RyzenAI\1.4.1``)
+  - Specify the name for the conda environment (default: ``ryzen-ai-1.4.1``)
 
 
-The Ryzen AI Software packages are now installed in the conda environment created by the installer. 
+The Ryzen AI Software packages are now installed in the conda environment created by the installer.
 
 
 .. _quicktest:
@@ -130,7 +137,7 @@ Lightweight Installer
 
 A lightweight installer is available with reduced features. It cannot be used for compiling BF16 models but fully supports compiling and running INT8 models and running LLM models.
 
-- Download the RyzenAI Software Runtime MSI installer :download:`ryzen-ai-rt-1.4.0.msi <https://account.amd.com/en/forms/downloads/amd-end-user-license-xef.html?filename=ryzen-ai-rt-1.4.0.msi>`.
+- Download the RyzenAI Software Runtime MSI installer ``ryzen-ai-rt-1.4.1.msi`` from Ryzen AI Software Early Access Secure Site: https://account.amd.com/en/member/ryzenai-sw-ea.html.
 
 - Launch the MSI installer and follow the instructions on the installation wizard:
 

@@ -31,26 +31,26 @@ The following are the recommended system configuration for RyzenAI Linux install
 Installation Instructions
 *************************
 
-- Download the Ryzen AI Software Linux installer: :download:`ryzen_ai-1.4.0.tgz <https://account.amd.com/en/forms/downloads/amd-end-user-license-xef.html?filename=ryzen_ai-1.4.0.tgz>`.
+- Download the Ryzen AI Software Linux installer ``ryzen_ai-1.4.1.tgz`` from Ryzen AI Software Early Access Secure Site: https://account.amd.com/en/member/ryzenai-sw-ea.html
 
 - Extract the .tgz using the following command: 
 
 .. code-block::
 
-    tar -xvzf ryzen_ai-1.4.0.tgz
+    tar -xvzf <downloaded .tgz file>
 
 - Run the installer with default settings. This will prompt to read and agree to the EULA:
 
 .. code-block::
 
-    cd ryzen_ai-1.4.0
-    ./install_ryzen_ai_1_4.sh 
+    cd <extracted directory>
+    ./install_ryzen_ai.sh 
 
 - After reading the EULA, re-run the installer with options to agree to the EULA and create a Python virtual environment:
 
 .. code-block::
 
-    ./install_ryzen_ai_1_4.sh -a yes -p <PATH TO VENV> -l
+    ./install_ryzen_ai.sh -a yes -p <PATH TO VENV> -l
 
 - Activate the virtual environment to start using the Ryzen AI Software:  
 
